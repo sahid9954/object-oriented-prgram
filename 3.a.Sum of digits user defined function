@@ -1,0 +1,19 @@
+3.a.Sum of digits user defined function
+#include <iostream>
+using namespace std;
+int sum_of_digits(int n){
+    int sum=0;
+    while(n!=0){
+        sum+=n%10;
+        n/=10;
+    }
+    return sum;
+}
+int main() {
+    int n;
+    cout<<"enter the digits:-";
+    cin>>n;
+    cout<<"\n sum of two digits:-"<<sum_of_digits(n);
+    cout<<endl;
+    return 0;
+}
