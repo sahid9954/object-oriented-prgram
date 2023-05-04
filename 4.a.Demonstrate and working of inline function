@@ -1,0 +1,18 @@
+
+#include <iostream>
+using namespace std;
+inline int area (int length,int breadth){
+    return length * breadth;
+}
+int main() {
+   int length ,breadth,result;
+   cout<<"enter the length of the rectangle;";
+   cin>>length;
+     cout<<"enter the breadth of the rectangle;";
+   cin>>breadth;
+   
+   result=area(length,breadth);
+   cout<<"\n the area of the rectangle is"<<result;
+   cout<<"\n\n";
+    return 0;
+}
