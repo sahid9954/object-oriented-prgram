@@ -1,0 +1,31 @@
+
+#include <iostream>
+using namespace std;
+class name{
+    private:
+    int sum,num,res;
+    public:
+    void getnumber();
+    int findsumofdigit();
+};
+void name::getnumber(){
+    cout<<"enter the number:";
+    cin>>num;
+}
+int name::findsumofdigit(){
+    sum=0;
+    while(num>0){
+        res=num%10;
+        sum+=res;
+        num/=10;
+    }
+    return sum;
+}
+int main(){
+    name c;
+    int sum;
+    c.getnumber();
+    sum=c.findsumofdigit();
+    cout<<"\n sum of digits="<<sum;
+    return 0;
+}
